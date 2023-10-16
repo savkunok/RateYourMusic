@@ -33,7 +33,7 @@
 
 4.Просмотр оценок песен в альбоме:
   
-  <img src="https://github.com/savkunok/RateYourMusic/blob/main/%D0%BC%D0%B0%D0%BA%D0%B0%D0%BF1.png" height=650 width=1267>
+  <img src="https://github.com/savkunok/RateYourMusic/blob/main/%D0%BC%D0%B0%D0%BA%D0%B0%D0%BF1.png" >
 
 5.Поиск песен по названию: 
 
