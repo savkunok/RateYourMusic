@@ -20,11 +20,11 @@
     
 1.Возможность оценивать:
   
-  <img src="https://github.com/savkunok/RateYourMusic/blob/main/rating2.png" >
+  <img src="https://github.com/savkunok/RateYourMusic/blob/main/Mockups/rating2.png" >
     
 2.Список наиболее высоко оцененных новых песен:  
   
-  <img src="https://github.com/savkunok/RateYourMusic/blob/main/bestNewTracks.png">
+  <img src="https://github.com/savkunok/RateYourMusic/blob/main/Mockups/bestNewTracks.png">
     
 3.Твои оцененные песни:
 
@@ -33,15 +33,15 @@
 
 4.Просмотр оценок песен в альбоме:
   
-  <img src="https://github.com/savkunok/RateYourMusic/blob/main/%D0%BC%D0%B0%D0%BA%D0%B0%D0%BF1.png" >
+  <img src="https://github.com/savkunok/RateYourMusic/blob/main/Mockups/%D0%BC%D0%B0%D0%BA%D0%B0%D0%BF1.png" >
 
 5.Поиск песен по названию: 
 
-  <img src="https://github.com/savkunok/RateYourMusic/blob/main/search.jpg">
+  <img src="https://github.com/savkunok/RateYourMusic/blob/main/Mockups/search.jpg">
 
 6.Регистрация аккауна пользователя:
 
-  <img src="https://github.com/savkunok/RateYourMusic/blob/main/accCreation.jpg">
+  <img src="https://github.com/savkunok/RateYourMusic/blob/main/Mockups/accCreation.jpg">
 
 ### 2.3 Характеристики пользователей
 
