@@ -1,0 +1,53 @@
+<!DOCKTYPE html>
+<hyml>
+	<head>
+		<title> Registration</title>
+		<link rel="stylesheet" href="RegistrationStyle.css">
+	</head>
+	<body bgcolor="#32353a">
+		<div class="container">
+				<hr color="#32353a">
+    			<h1 id="regLabel">Registration</h1>
+				<form id="registrationForm">
+					<input type="text" placeholder="Login" name="username" required>
+					<input type="password" placeholder="Password" name="password" required>
+					<input type="password" placeholder="Repeat Password" name="confirmPassword" required>
+					<button type="button" class="registerbtn" onclick="submitForm()">Create your account</button>
+				</form>
+				<div id="errorMessage" class="error-message"></div>
+				<div id="successMessage" class="success-message"></div>
+				<hr color="#32353a" id="hr1">
+				
+				<p id="accLabel">Don't have an account? <a href="Login.html" class="hreftoreg">Sign in</a> or <a href="Album.html" class="hreftoreg">use as guest</a>.</p>
+  		</div>
+		<script>
+			 function submitForm() {
+				  var username = document.getElementsByName('username')[0].value;
+				  var password = document.getElementsByName('password')[0].value;
+				  var confirmPassword = document.getElementsByName('confirmPassword')[0].value;
+				  var errorMessageElement = document.getElementById('errorMessage');
+				  var successMessageElement = document.getElementById('successMessage');
+
+				  if (password === confirmPassword) {
+					errorMessageElement.innerHTML = ''; // Очистить сообщение об ошибке
+					successMessageElement.innerHTML = 'Account was created.'; // Очистить сообщение об успехе
+
+					// Создаем объект данных для отправки на сервер
+					var data = {
+					  username: username,
+					  password: password
+					};
+
+					// Открываем новое окно браузера и отображаем данные запроса
+					var newWindow = window.open();
+					newWindow.document.write('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+
+				  } else {
+					errorMessageElement.innerHTML = 'Passwords do not match. Try again.'; 
+				  }
+				}
+		  </script>
+
+  		
+	</body>
+</html>

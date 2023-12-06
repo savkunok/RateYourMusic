@@ -1,0 +1,49 @@
+<!DOCKTYPE html>
+<hyml>
+	<head>
+		<title> Login</title>
+		<link rel="stylesheet" href="LoginStyle.css">
+	</head>
+	<body bgcolor="#32353a">
+		<div class="container">
+		        <hr color="#32353a">
+    			<h1 id="logLabel">Sing in</h1>
+				<form id="LoginForm">
+					<input type="text" placeholder="Login" name="username" required>
+					<input type="password" placeholder="Password" name="password" required>
+					<button type="button" onclick="submitForm()" class="logbtn">Sign in</button>
+				<form>
+				<div id="errorMessage" class="error-message"></div>
+				<div id="successMessage" class="success-message"></div>
+				<hr color="#32353a" id="hr1">
+				<div id="successMessage" class="success-message"></div>
+				<p id="accLabel">Don't have an account? <a href="Registration.html" class="hreftolog">Sign up</a> or <a href="Album.html" class="hreftolog">use as guest</a>.</p>
+				 <script>
+					function submitForm() {
+					  var username = document.getElementsByName('username')[0].value;
+					  var password = document.getElementsByName('password')[0].value;
+					  var errorMessageElement = document.getElementById('errorMessage');
+					  var successMessageElement = document.getElementById('successMessage');
+					  if (!username || !password) {
+							errorMessageElement.innerHTML = 'Please fill in both username and password.';
+							successMessageElement.innerHTML = ''; 
+							return;
+					  }
+					  errorMessageElement.innerHTML = '';
+					  successMessageElement.innerHTML = 'Request has been sent.'; 
+					  // Simulating a login request
+					  var data = {
+						username: username,
+						password: password
+					  };
+
+					  // Open a new window and display the data of the sent request
+					  var newWindow = window.open();
+					  newWindow.document.write('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+					}
+				  </script>
+  		</div>
+
+  		
+	</body>
+</html>
